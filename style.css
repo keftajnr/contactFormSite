@@ -12,14 +12,14 @@ body{
 
 @font-face {
     font-family: 'Karla-Bold';
-    src: url('./assets/fonts/Karla-Bold.ttf') format('truetype');
+    src: url('assets/fonts/Karla-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Karla-Regular';
-    src: url('./assets/fonts/Karla-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Karla-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
