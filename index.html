@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact Form Project">
+        <meta name="author" content="Alwell">
+        <title>Contact Form Site</title>
+        <link rel="stylesheet" href="./style.css"> <!-- Link to your CSS file -->
+        <link rel="icon" href="./testimonial-site-props/images/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        <main class="contact-form" id="contact-form">
+            <div class="header">
+                <p>Contact Us</p>
+            </div>
+
+            <form class="form" id="form">
+                <section class="name-section">
+                    <div class="first-name">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" name="first-name" id="first-name">
+                        <!-- Error message for first name -->
+                        <span class="error" id="first-name-error"></span>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <!-- Error message for last name -->
+                        <span class="error" id="last-name-error"></span>
+                    </div>
+                </section>
+
+                <section class="email-section">
+                    <label for="email">Email Address *</label>
+                    <input type="text" name="email" id="email">
+                    <!-- Error message for email -->
+                    <span class="error" id="email-error"></span>
+                </section>
+
+                <section class="query-section">
+                    <span>Query Type *</span>
+                    <div class="queries">
+                        <div class="general-enquiry" id="general-enquiry">
+                            <input type="radio" class="checkbox-circle left-circle" id="enquiry-checkbox">
+                            <label for="general-enquiry">General Enquiry<label>
+                        </div>
+                        <div class="support-request" id="support-request">
+                            <input type="radio" class="checkbox-circle right-circle" id="support-checkbox">
+                            <label for="support-request">Support Request</label>
+                        </div>
+                    </div>
+                    <!-- Error message for query -->
+                    <span class="error" id="query-error"></span>
+                </section>
+
+                <section class="message-section">
+                    <label for="message">Message *</label>
+                    <textarea id="message"></textarea>
+                    <!-- Error message for message box -->
+                    <span class="error" id="message-error"></span>
+                </section>
+
+                <section class="consent-section">
+                    <div>
+                        <input type="checkbox" class="checkbox-square" id="consent-checkbox">
+                        <span class="consent-message">I consent to being contacted by the form *</span>
+                    </div>
+
+                    <!-- Error message for consent checkbox -->
+                    <span class="error" id="consent-error"></span>
+                </section>
+
+                <button class="submit-section" type="submit">
+                    <span>Submit</span>
+                </button>
+            </form>
+
+            <div class="success-box" id="successMessage">
+                <div>
+                    <img src="./assets/images/icon-success-check.svg" alt="Success Icon">
+                    <span class="success-text">Message Sent!</span>
+                </div>
+                <span class="success-text-2">Thanks for completing the form. We'll be in touch soon.</span>
+            </div>
+        </main>
+
+        <script src="./action.js"></script>
+    </body>
+</html>
